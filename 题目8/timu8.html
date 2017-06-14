@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>题目9</title>
+  <link rel="stylesheet" href="timu8.css">
+</head>
+<body>
+  <div id="timu8">
+    <ul class="nav">
+      <li class="item pos-r">
+        <a href="javascript:void(0)">
+          <span class="fl">珠宝玉器</span>
+          <span class="fr">></span>
+        </a>
+        <ul class="sec-level-nav">
+          <li><a href="javascript:void(0)">翡翠</a></li>
+          <li><a href="javascript:void(0)">玉石</a></li>
+          <li><a href="javascript:void(0)">宝石</a></li>
+          <li><a href="javascript:void(0)">水晶</a></li>
+          <li><a href="javascript:void(0)">玛瑙</a></li>
+          <li><a href="javascript:void(0)">珍珠</a></li>
+          <li><a href="javascript:void(0)">钻石</a></li>
+          <li><a href="javascript:void(0)">琥珀</a></li>
+          <li><a href="javascript:void(0)">和田</a></li>
+          <li><a href="javascript:void(0)">琥珀</a></li>
+        </ul>
+      </li>
+      <li class="item pos-r">
+        <a href="javascript:void(0)">
+          <span class="fl">珠宝玉器</span>
+          <span class="fr">></span>
+        </a>
+        <ul class="sec-level-nav">
+          <li><a href="javascript:void(0)">翡翠</a></li>
+          <li><a href="javascript:void(0)">玉石</a></li>
+          <li><a href="javascript:void(0)">玛瑙</a></li>
+          <li><a href="javascript:void(0)">珍珠</a></li>
+          <li><a href="javascript:void(0)">钻石</a></li>
+          <li><a href="javascript:void(0)">琥珀</a></li>
+          <li><a href="javascript:void(0)">和田</a></li>
+          <li><a href="javascript:void(0)">琥珀</a></li>
+        </ul>
+      </li>
+      <li class="item pos-r">
+        <a href="javascript:void(0)">
+          <span class="fl">珠宝玉器</span>
+          <span class="fr">></span>
+        </a>
+        <ul class="sec-level-nav pos-a">
+          <li><a href="javascript:void(0)">钻石</a></li>
+          <li><a href="javascript:void(0)">琥珀</a></li>
+          <li><a href="javascript:void(0)">和田</a></li>
+          <li><a href="javascript:void(0)">琥珀</a></li>
+        </ul>
+      </li>
+      <li class="item pos-r">
+        <a href="javascript:void(0)">
+          <span class="fl">珠宝玉器</span>
+          <span class="fr">></span>
+        </a>
+        <ul class="sec-level-nav">
+          <li><a href="javascript:void(0)">翡翠</a></li>
+          <li><a href="javascript:void(0)">玉石</a></li>
+          <li><a href="javascript:void(0)">宝石</a></li>
+          <li><a href="javascript:void(0)">水晶</a></li>
+          <li><a href="javascript:void(0)">玛瑙</a></li>
+          <li><a href="javascript:void(0)">珍珠</a></li>
+        </ul>
+      </li>
+      <li class="item pos-r">
+        <a href="javascript:void(0)">
+          <span class="fl">珠宝玉器</span>
+          <span class="fr">></span>
+        </a>
+        <ul class="sec-level-nav">
+          <li><a href="javascript:void(0)">翡翠</a></li>
+          <li><a href="javascript:void(0)">玉石</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <script src="../jquery-3.2.1.min.js"></script>
+<script>
+  $('.nav').on('mouseover','.item',function(e){
+    $(this).find('.sec-level-nav').show()
+  })
+
+  $('.nav').on('mouseout','.item',function(e){
+    $(this).find('.sec-level-nav').hide()
+  })
+</script>
+</body>
+</html>

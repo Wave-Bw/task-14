@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#tab {
+  width: 900px;
+}
+
+.tab{
+  margin: 20px 0;
+}
+
+.tab-title{
+  border: 2px solid #CCC;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #FFF;
+  display: inline-block;
+  margin-bottom: -8px;
+}
+
+.tab-title li{
+  float: left;
+  cursor: pointer;
+}
+
+.tab-title li a{
+  padding: 0 20px;
+  color: black;
+}
+
+.tab-title li:not(:last-child) a{
+  border-right: 1px solid #CCC;
+}
+
+.tab-commodities{
+  border: 2px solid #CCC;
+  background: #FFF;
+}
+
+.tab-commodities>li{
+  display: none;
+}
+
+.tab-title li.active{
+  background: #CCC;
+}
+
+.tab-title li.active a{
+  color: #FF3235;
+}
+
+
+
+.tab-commodities .com-item{
+  margin-right: -20px ;
+  margin-bottom: -20px ;
+}
+
+.tab-commodities .com-item li{
+  float: left;
+  width: 285px;
+  margin: 0 20px 20px 0;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 15px;
+  box-sizing: border-box;
+  border: 1px solid #EEE;
+  position: relative;
+  cursor: pointer;
+}
+
+.tab-commodities .com-item .commodities-price {
+  color: #FF3235;
+  text-align: left;
+}
+
+.tab-commodities .com-item .cover{
+  background: #CCC;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.tab-commodities .com-item .cover a{
+  border: 2px solid #FF3235;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: #FFF;
+  color: #FF3235;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.tab-commodities .active,
+.com-item .cover.active{
+  display: block;
+}

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>题目10</title>
+  <link rel="stylesheet" href="timu10.css">
+</head>
+<body>
+<div id="more" class="container">
+  <h2>珠宝首饰</h2>
+  <ul class="tab-commodities">
+    <li class="active">
+      <ul class="com-item clearfix">
+        <li>
+          <div class="cover">
+            <a href="javascript:void(0)">立即抢购</a>
+          </div>
+          <img src="../img/001.jpg" alt="001">
+          <h3 class="commodities-title">藏美千足金和田玉金镶玉路路通吊坠</h3>
+          <div class="commodities-price">
+            <span class="rmb">￥</span>
+            <span class="price">1699.00</span>
+          </div>
+        </li>
+        <li>
+          <div class="cover">
+            <a href="javascript:void(0)">立即抢购</a>
+          </div>
+          <img src="../img/001.jpg" alt="001">
+          <h3 class="commodities-title">藏美千足金和田玉金镶玉路路通吊坠</h3>
+          <div class="commodities-price">
+            <span class="rmb">￥</span>
+            <span class="price">1699.00</span>
+          </div>
+        </li>
+        <li>
+          <div class="cover">
+            <a href="javascript:void(0)">立即抢购</a>
+          </div>
+          <img src="../img/001.jpg" alt="001">
+          <h3 class="commodities-title">藏美千足金和田玉金镶玉路路通吊坠</h3>
+          <div class="commodities-price">
+            <span class="rmb">￥</span>
+            <span class="price">1699.00</span>
+          </div>
+        </li>
+        <li>
+          <div class="cover">
+            <a href="javascript:void(0)">立即抢购</a>
+          </div>
+          <img src="../img/001.jpg" alt="001">
+          <h3 class="commodities-title">藏美千足金和田玉金镶玉路路通吊坠</h3>
+          <div class="commodities-price">
+            <span class="rmb">￥</span>
+            <span class="price">1699.00</span>
+          </div>
+        </li>
+        <li>
+          <div class="cover">
+            <a href="javascript:void(0)">立即抢购</a>
+          </div>
+          <img src="../img/001.jpg" alt="001">
+          <h3 class="commodities-title">藏美千足金和田玉金镶玉路路通吊坠</h3>
+          <div class="commodities-price">
+            <span class="rmb">￥</span>
+            <span class="price">1699.00</span>
+          </div>
+        </li>
+        <li>
+          <div class="cover">
+            <a href="javascript:void(0)">立即抢购</a>
+          </div>
+          <img src="../img/001.jpg" alt="001">
+          <h3 class="commodities-title">藏美千足金和田玉金镶玉路路通吊坠</h3>
+          <div class="commodities-price">
+            <span class="rmb">￥</span>
+            <span class="price">1699.00</span>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <button class="more">添加</button>
+</div>
+
+
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+
+  $('.com-item').on('mouseenter','li',function(e){
+    $(this).find('.cover').addClass('active')
+  })
+
+  $('.com-item').on('mouseleave','li',function(e){
+    $(this).find('.cover').removeClass('active')
+  })
+
+
+  var products = [
+    {
+      img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
+      name: '珂兰 黄金手 猴哥款',
+      price: '￥405.00'
+    },{
+      img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
+      name: '珂兰 黄金转运珠 猴哥款',
+      price: '￥100.00'
+    },{
+      img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
+      name: '珂兰 黄金手链 3D猴哥款',
+      price: '￥45.00'
+    }
+  ];
+
+  function createHTML(products){
+    var html = '';
+    html += '<li><div class="cover"><a href="javascript:void(0)">立即抢购</a></div>';
+    html += '<img src="' + products.img + '" >';
+    html += '<h3 class="commodities-title">' + products.name + '</h3>';
+    html += '<div class="commodities-price">' + products.price + '</div></li>';
+    return html;
+  }
+
+  $('.more').on('click',function(){
+    $.each(products, function(key, value){
+      $('#more .com-item').append(createHTML(value));
+    })
+  })
+</script>
+</body>
+</html>

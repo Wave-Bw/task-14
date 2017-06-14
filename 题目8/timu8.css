@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  padding-left: 30px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::after {
+  content: '';
+  display: inline-block;
+  clear: both;
+}
+
+.pos-r {
+  position: relative;
+}
+
+.pos-a {
+  position: absolute;
+}
+
+#timu8 {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+#timu8 .item{
+  color: white;
+  width: 100%;
+  border-bottom: 2px solid crimson;
+}
+
+#timu8 .nav {
+  background-color: red;
+  line-height: 40px;
+  width: 220px;
+}
+
+#timu8 .item:last-child {
+  border: 0;
+}
+
+#timu8 .nav .item {
+  padding: 0 10px 0 10px;
+}
+
+#timu8 .item > a {
+  color: white;
+  display: block;
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+#timu8 .item .sec-level-nav {
+  background: #FFF;
+  width: 240px;
+  padding: 10px 20px;
+  position: absolute;
+  left: 220px;
+  top: 0;
+  border: 1px solid black;
+  display: none;
+}
+
+#timu8 .sec-level-nav li {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
